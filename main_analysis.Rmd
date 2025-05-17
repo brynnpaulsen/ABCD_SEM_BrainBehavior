@@ -1,0 +1,42 @@
+---
+title: "Longitudinal CFA of Cognitive and Neural Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Load required packages
+library(lavaan)
+library(car)
+library(psych)
+library(tibble)
+library(rlang)
+library(lmerTest)
+library(lme4)
+library(wesanderson)
+library(pacman)
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(haven)
+library(lavaanPlot)
+library(knitr)
+library(semPlot)
+library(semTools)
+library(dplyr)
+library(viridis)
+library(RColorBrewer)
+library(sjPlot)
+library(ppcor)
+```
+
+```{r data-loading}
+# Load data from CSV files (assumed placed in /data)
+tp1 <- read.csv("../data/tp1_updated.csv")
+tp2 <- read.csv("../data/tp2_updated.csv")
+permute_tp1 <- read.csv("../data/permute.csv")
+permute_tp2 <- read.csv("../data/permute_tp2.csv")
+```
+
+<!-- Further annotated blocks will be added here in stages... -->
+```
+
